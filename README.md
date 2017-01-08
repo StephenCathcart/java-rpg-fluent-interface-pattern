@@ -31,11 +31,11 @@ I used this as a building block an started adding my own *Event* types and chain
 Event event = Event
 		.preload()
 		.debug()
-		.talk().start(ToonType.LAURA, DialogueType.ID1, 300f)
-		.pause(4f)
-		.talk().start(ToonType.ERIN, DialogueType.ID2, 300f)
+		.talk().start(ToonType.LAURA, DialogueType.ID1, 300)
+		.pause(4)
+		.talk().start(ToonType.ERIN, DialogueType.ID2, 300)
 		.move().creature(LocationType.S1W1, DirectionType.WEST, MoveSpeedType.SLOW)
-		.pause(2f)
+		.pause(2)
 .build();
 ```
 
