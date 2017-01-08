@@ -1,0 +1,286 @@
+{
+   "events" : [
+      {
+         "eventId" : 1,
+         "actions" : [
+            {
+               "actionId" : 1,
+               "type" : "DEBUG"
+            },
+            {
+               "actionId" : 2,
+               "type" : "ENVIRONMENT",
+               "environmental" : {
+                  "type" : "PRELOAD",
+                  "rainParticleCount" : 50
+               }
+            },
+            {
+               "actionId" : 3,
+               "type" : "SOUND",
+               "sound" : "rain_loop",
+               "audible" : {
+                  "type" : "PLAY",
+                  "isLooping" : true,
+                  "volume" : -10.0,
+                  "positionX" : null,
+                  "positionY" : null
+               }
+            },
+            {
+               "actionId" : 4,
+               "type" : "ENVIRONMENT",
+               "environmental" : {
+                  "type" : "THUNDER",
+                  "isActive" : true,
+                  "volume" : 10.0
+               }
+            }
+         ]
+      },
+      {
+         "eventId" : 2,
+         "actions" : [
+            {
+               "actionId" : 1,
+               "type" : "DEBUG"
+            },
+            {
+               "actionId" : 2,
+               "type" : "TALK",
+               "talkable" : {
+                  "type" : "START",
+                  "toon" : "Laura",
+                  "dialogue" : "id1",
+                  "duration" : 300.0
+               }
+            },
+            {
+               "actionId" : 3,
+               "type" : "PAUSE",
+               "duration" : 4.0
+            },
+            {
+               "actionId" : 4,
+               "type" : "TALK",
+               "talkable" : {
+                  "type" : "START",
+                  "toon" : "Erin",
+                  "dialogue" : "id2",
+                  "duration" : 300.0
+               }
+            },
+            {
+               "actionId" : 5,
+               "type" : "MOVE",
+               "toon" : "Creature",
+               "location" : "S1W1",
+               "direction" : "WEST",
+               "speed" : 200
+            },
+            {
+               "actionId" : 6,
+               "type" : "PAUSE",
+               "duration" : 2.0
+            }
+         ]
+      },
+      {
+         "eventId" : 3,
+         "actions" : [
+            {
+               "actionId" : 1,
+               "type" : "DEBUG"
+            },
+            {
+               "actionId" : 2,
+               "type" : "PANIC",
+               "object" : "Bottle3",
+               "duration" : 2.0,
+               "failEventId" : null,
+               "successEventId" : null
+            },
+            {
+               "actionId" : 3,
+               "type" : "TALK",
+               "talkable" : {
+                  "type" : "START",
+                  "toon" : "Erin",
+                  "dialogue" : "id2",
+                  "duration" : 10.0
+               }
+            },
+            {
+               "actionId" : 4,
+               "type" : "DECISION"
+            }
+         ]
+      },
+      {
+         "eventId" : 4,
+         "actions" : [
+            {
+               "actionId" : 1,
+               "type" : "DEBUG"
+            },
+            {
+               "actionId" : 2,
+               "type" : "CAMERA",
+               "camera" : {
+                  "type" : "SETUP",
+                  "moveSmoothness" : 0.08,
+                  "zoomSmoothness" : 0.08
+               }
+            },
+            {
+               "actionId" : 3,
+               "type" : "CAMERA",
+               "camera" : {
+                  "type" : "ZOOM",
+                  "zoom" : 1.3
+               }
+            },
+            {
+               "actionId" : 4,
+               "type" : "CAMERA",
+               "camera" : {
+                  "type" : "SHAKE",
+                  "magnitude" : 20.0,
+                  "duration" : 4.0,
+                  "shakeType" : "REDUCING"
+               }
+            },
+            {
+               "actionId" : 5,
+               "type" : "CAMERA",
+               "camera" : {
+                  "type" : "MOVE",
+                  "hasTarget" : true,
+                  "location" : "S1W1"
+               }
+            },
+            {
+               "actionId" : 6,
+               "type" : "PAUSE",
+               "duration" : 2.0
+            },
+            {
+               "actionId" : 7,
+               "type" : "CAMERA",
+               "camera" : {
+                  "type" : "MOVE",
+                  "hasTarget" : false,
+                  "location" : null
+               }
+            }
+         ]
+      },
+      {
+         "eventId" : 5,
+         "actions" : [
+            {
+               "actionId" : 1,
+               "type" : "DEBUG"
+            },
+            {
+               "actionId" : 2,
+               "type" : "EFFECT",
+               "effect" : {
+                  "type" : "VIGNETTE",
+                  "isActive" : false,
+                  "distance" : null,
+                  "speed" : null
+               }
+            },
+            {
+               "actionId" : 3,
+               "type" : "EFFECT",
+               "effect" : {
+                  "type" : "NOISE",
+                  "isActive" : false,
+                  "intensity" : null,
+                  "color" : null
+               }
+            }
+         ]
+      },
+      {
+         "eventId" : 6,
+         "actions" : [
+            {
+               "actionId" : 1,
+               "type" : "DEBUG"
+            },
+            {
+               "actionId" : 2,
+               "type" : "ENVIRONMENT",
+               "environmental" : {
+                  "type" : "FLIES",
+                  "isActive" : true
+               }
+            },
+            {
+               "actionId" : 3,
+               "type" : "PAUSE",
+               "duration" : 4.0
+            },
+            {
+               "actionId" : 4,
+               "type" : "ENVIRONMENT",
+               "environmental" : {
+                  "type" : "FLIES",
+                  "isActive" : false
+               }
+            }
+         ]
+      },
+      {
+         "eventId" : 7,
+         "actions" : [
+            {
+               "actionId" : 1,
+               "type" : "DEBUG"
+            },
+            {
+               "actionId" : 2,
+               "type" : "LIGHT",
+               "light" : "Porchlight",
+               "illuminant" : {
+                  "type" : "ON"
+               }
+            },
+            {
+               "actionId" : 3,
+               "type" : "PAUSE",
+               "duration" : 3.0
+            },
+            {
+               "actionId" : 4,
+               "type" : "LIGHT",
+               "light" : "Porchlight",
+               "illuminant" : {
+                  "type" : "OFF"
+               }
+            },
+            {
+               "actionId" : 5,
+               "type" : "PAUSE",
+               "duration" : 3.0
+            },
+            {
+               "actionId" : 6,
+               "type" : "LIGHT",
+               "light" : "Porchlight",
+               "illuminant" : {
+                  "type" : "FLICKER",
+                  "onTimeMin" : 0.1,
+                  "onTimeMax" : 0.2,
+                  "offTimeMin" : 0.1,
+                  "offTimeMax" : 0.2,
+                  "duration" : 2.0
+               }
+            }
+         ]
+      }
+   ]
+}
