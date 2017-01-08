@@ -46,7 +46,7 @@ Event event = Event
 		.preload()
 		.debug()
 		.environment().flies()
-		.pause(4f)
+		.pause(4)
 		.environment().killFlies()
 .build();
 ```
@@ -68,11 +68,11 @@ Event event = Event
 Event event4 = Event
 	.preload()
 	.debug()
-	.camera().smoothness(0.08f, 0.08f)
-	.camera().zoom(1.3f)
-	.camera().shake(20f, 4f, ShakeType.REDUCING)
+	.camera().smoothness(0.08, 0.08)
+	.camera().zoom(1.3)
+	.camera().shake(20, 4, ShakeType.REDUCING)
 	.camera().move(LocationType.S1W1)
-	.pause(2f)
+	.pause(2)
 	.camera().reset()
 .build();
 ```
@@ -84,10 +84,10 @@ Event event7 = Event
 	.preload()
 	.debug()
 	.light().on(LightType.PORCHLIGHT)
-	.pause(3f)
+	.pause(3)
 	.light().off(LightType.PORCHLIGHT)
-	.pause(3f)
-	.light().flicker(LightType.PORCHLIGHT, 0.1f, 0.2f, 0.1f, 0.2f, 2f)
+	.pause(3)
+	.light().flicker(LightType.PORCHLIGHT, 0.1, 0.2, 0.1, 0.2, 2)
 .build();
 ```
 
